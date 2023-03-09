@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 // dev branch for Y.Practicum
 public class Main {
@@ -7,7 +6,6 @@ public class Main {
         // ваш код начнется здесь
         // вы не должны ограничиваться только классом Main и можете создавать свои классы по необходимости
         Count count = new Count();
-        count.getPeoples();
-
+        count.count();
     }
 }
