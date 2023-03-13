@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Count {
-    int peoples = 2;
+    int peoples;
     ArrayList<Good> goods = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
@@ -62,7 +62,8 @@ public class Count {
                 }
             }
             goods.add(new Good(name, price));
-            System.out.println("Вы добавили товар " + name + " с ценой " + Formatter.complexFormat(price) + "\nВведите любой символ, чтобы продолжить, или \"завершить\", чтобы перейти к подсчету");
+            System.out.format("Вы добавили товар %s с ценой %s \nВведите любой символ, чтобы продолжить, или \"завершить\", чтобы перейти к подсчету", name, Formatter.complexFormat(price));
+            System.out.println();
             scanner.nextLine();
             if(scanner.nextLine().equalsIgnoreCase("завершить")) break;
         }
